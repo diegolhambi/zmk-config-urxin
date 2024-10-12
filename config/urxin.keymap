@@ -176,8 +176,8 @@ ZMK_LAYER(num,
 )
 
 ZMK_LAYER(sys,
-    &none &none &none &none &bt BT_SEL 0        &tog BMAC &none &none &none &none
-    &none &none &none &none &bt BT_SEL 1        &none     &none &none &none &none 
-    &none &none &none &none &bt BT_SEL 2        &none     &none &none &none &none
-                           &trans &trans        &trans    &trans
+    &bootloader &none &none &none &bt BT_SEL 0        &tog BMAC &none &none &none &bootloader
+    &none       &none &none &none &bt BT_SEL 1        &none     &none &none &none &none 
+    &none       &none &none &none &bt BT_SEL 2        &none     &none &none &none &none
+                                 &trans &trans        &trans    &trans
 )
