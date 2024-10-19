@@ -6,6 +6,8 @@
 #include "zmk-helpers/helper.h"
 #include "zmk-helpers/key-labels/34.h"
 
+#include <behaviors/rgbled_widget.dtsi>
+
 #define BWIN 0
 #define BMAC 1
 #define NAV  2
@@ -178,6 +180,6 @@ ZMK_LAYER(num,
 ZMK_LAYER(sys,
     &bootloader &none &none &none &bt BT_SEL 0        &tog BMAC &none &none &none &bootloader
     &none       &none &none &none &bt BT_SEL 1        &none     &none &none &none &none 
-    &none       &none &none &none &bt BT_SEL 2        &none     &none &none &none &none
+    &ind_bat    &none &none &none &bt BT_SEL 2        &none     &none &none &none &ind_bat
                                  &trans &trans        &trans    &trans
 )
