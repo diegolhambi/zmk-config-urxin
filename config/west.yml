@@ -8,8 +8,6 @@ manifest:
       url-base: https://github.com/diegolhambi
     - name: urob
       url-base: https://github.com/urob
-    - name: caksoylar
-      url-base: https://github.com/caksoylar
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -25,7 +23,7 @@ manifest:
       remote: urob
       revision: main
     - name: zmk-rgbled-widget
-      remote: caksoylar
+      remote: diegolhambi
       revision: main
   self:
     path: config
