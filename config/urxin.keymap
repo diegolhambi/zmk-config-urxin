@@ -25,6 +25,9 @@
 #define COMBO_IDLE_FAST 150
 #define COMBO_IDLE_SLOW 50
 
+&sk {
+    quick-release;
+};
 
 ZMK_HOLD_TAP(hml,
     flavor = "balanced";
