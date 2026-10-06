@@ -10,6 +10,10 @@ manifest:
       url-base: https://github.com/urob
     - name: caksoylar
       url-base: https://github.com/caksoylar
+  # These modules follow ZMK's versioning scheme: `main` targets ZMK's `main`.
+  # Keep them on the tag matching the zmk revision above (v0.3), otherwise they
+  # build against APIs that don't exist in v0.3 (e.g. the 2-arg
+  # zmk_keymap_layer_activate, and the renamed rgbled_adapter board overlays).
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -20,12 +24,12 @@ manifest:
       revision: main
     - name: zmk-helpers
       remote: urob
-      revision: main
+      revision: v0.3
     - name: zmk-auto-layer
       remote: urob
-      revision: main
+      revision: v0.3
     - name: zmk-rgbled-widget
       remote: caksoylar
-      revision: main
+      revision: v0.3
   self:
     path: config
